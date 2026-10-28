@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #100d20;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+header {
+    background: #1b1533;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid #7c3aed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 30px;
+    color: #ffca5c;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffca5c;
+}
+
+.home {
+    min-height: 85vh;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #211344, #5425a8, #103b66);
+}
+
+.welcome {
+    color: #ffdc80;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.home h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+    max-width: 850px;
+}
+
+.description {
+    max-width: 720px;
+    color: #eee6ff;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ffca5c, #ff8a65);
+    color: #211344;
+    padding: 13px 27px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px #ffca5c44;
+}
+
+.section {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 15px;
+    color: #ffca5c;
+}
+
+.subtitle {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    color: #c9c0df;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.service {
+    flex: 1 1 230px;
+    max-width: 360px;
+    padding: 30px 25px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #24183f, #302052);
+    border: 1px solid #60418c;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    border-color: #ffca5c;
+    box-shadow: 0 12px 30px #00000035;
+}
+
+.service h3 {
+    color: #ff9e80;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    color: #e0d9ef;
+    line-height: 1.8;
+}
+
+.about {
+    background: linear-gradient(135deg, #152c45, #202044);
+}
+
+.about p {
+    max-width: 850px;
+    margin: 20px auto;
+    color: #e0e6f5;
+}
+
+.choose {
+    background: #171127;
+}
+
+.projects {
+    background: linear-gradient(135deg, #27143f, #42215b);
+}
+
+.projects .service {
+    background: #211631;
+}
+
+.message {
+    background: linear-gradient(120deg, #8a287d, #5032a8, #174e86);
+}
+
+.message h2 {
+    color: #ffffff;
+}
+
+.message p {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #f2eaff;
+}
+
+.contact {
+    background: #151126;
+}
+
+.contact p {
+    max-width: 750px;
+    margin: 20px auto;
+    color: #d5cde7;
+}
+
+footer {
+    background: #0b0815;
+    text-align: center;
+    padding: 40px 8%;
+    border-top: 2px solid #7c3aed;
+}
+
+footer h3 {
+    color: #ffca5c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #c9c0df;
+    margin: 8px 0;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        padding: 80px 6%;
+        min-height: 75vh;
+    }
+
+    .welcome {
+        letter-spacing: 1px;
+    }
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .service {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
